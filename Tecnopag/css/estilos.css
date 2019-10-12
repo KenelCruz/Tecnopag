@@ -1,0 +1,227 @@
+* {
+	margin:0;
+	padding:0;
+  box-sizing:border-box;
+}
+
+body {
+background:#e9e9e9;
+font-family: 'Open Sans', sans-serif;
+}
+
+.conter {
+	width: 95%;
+	max-width:1000px;
+	margin:auto;
+}
+
+.contenedor p {
+	margin-bottom:40px;
+}
+
+header nav {
+	background:#3498db;
+	margin-bottom:10px;
+}
+
+header nav ul {
+	list-style: none;
+	overflow: hidden;
+}
+
+header nav ul li {
+	float: left;
+}
+
+header nav ul li a {
+	display: block;
+	padding:20px;
+	color:#fff;
+	text-decoration: none;
+}
+
+header nav ul li a:hover {
+	background:#2980b9;
+}
+
+
+/* --- Clase que agregaremos cuando el usuario haga scroll --- */
+
+.menu-fixed {
+	position:fixed;
+	z-index:1000;
+	top:0;
+	/*max-width:1000px;*/
+	left:0;
+	width:100%;
+	box-shadow:0px 4px 3px rgba(0,0,0,.5);
+}
+
+.ir-arriba {
+	display:none;
+	padding:20px;
+	background:#024959;
+	font-size:20px;
+	color:#fff;
+	cursor:pointer;
+	position: fixed;
+	bottom:20px;
+	right:20px;
+}
+
+
+  .NOTICIAS {
+  width:90%;
+  margin:15px auto;
+  }
+
+  .elemento {
+  width:220px;
+  background:#fff;
+  float:left;
+  margin-right:15px;
+  margin-bottom:15px;
+  box-shadow:0 1px 2px 0 rgba(0,0,0,0.22);
+  }
+
+  .elemento p {
+  padding:10px;
+  font-size:13px;
+  }
+
+  .elemento img {
+  width:100%;
+  }
+
+
+
+
+
+
+  /*Estilos Generales*/
+  .button {
+  	background:#7f8c8d;
+  	color:#fff;
+  	display:inline-block;
+  	font-size:1.25em;
+  	margin:20px;
+  	padding:10px 0;
+  	text-align:center;
+  	width:200px;
+  	text-decoration:none;
+  	box-shadow:0px 3px 0px #373c3c;
+  }
+
+  .button span {
+  	margin-right:10px;
+  }
+
+  /*Colores*/
+  .button.blue {
+  	background:#3498db;
+  	box-shadow:0px 3px 0px #266792;
+  }
+
+  .button.yellow {
+  	background:#e67e22;
+  	box-shadow:0px 3px 0px #b55704;
+  }
+
+
+  /*Tamaños*/
+  .button.medium {
+  	width:350px;
+  }
+
+
+  .button.large {
+  	width:450px;
+  }
+
+
+  .button.radius {
+  	border-radius:50px;
+  }
+
+  /*Efectos, Hover*/
+  .button:hover {
+  	box-shadow:0px 0px 0px;
+  	padding-top:7px;
+  }
+
+  #container-main{
+    margin:40px auto;
+    width:95%;
+    min-width:320px;
+    max-width:960px;
+}
+
+#container-main h1{
+    font-size: 40px;
+    text-shadow:4px 4px 5px #16a085;
+}
+
+.accordion-container {
+    width: 100%;
+    margin: 0 0 20px;
+    clear:both;
+}
+
+.accordion-titulo {
+    position: relative;
+    display: block;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: 300;
+    background: #2c3e50;
+    color: #fff;
+    text-decoration: none;
+}
+.accordion-titulo.open {
+    background: #16a085;
+    color: #fff;
+}
+.accordion-titulo:hover {
+    background: #1abc9c;
+}
+
+.accordion-titulo span.toggle-icon:before {
+    content:"+";
+}
+
+.accordion-titulo.open span.toggle-icon:before {
+    content:"-";
+}
+
+.accordion-titulo span.toggle-icon {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 38px;
+    font-weight:bold;
+}
+
+.accordion-content {
+    display: none;
+    padding: 20px;
+    overflow: auto;
+}
+
+.accordion-content p{
+    margin:0;
+}
+
+.accordion-content img {
+    display: block;
+    float: left;
+    margin: 0 15px 10px 0;
+    width: 50%;
+    height: auto;
+}
+
+
+@media (max-width: 767px) {
+    .accordion-content {
+        padding: 10px 0;
+    }
+}
